@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\bin\Debug\netcoreapp3.1\MiniBioTinoKerkhof.exe
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\bin\Debug\netcoreapp3.1\MiniBioTinoKerkhof.deps.json
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\bin\Debug\netcoreapp3.1\MiniBioTinoKerkhof.runtimeconfig.json
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\bin\Debug\netcoreapp3.1\MiniBioTinoKerkhof.runtimeconfig.dev.json
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\bin\Debug\netcoreapp3.1\MiniBioTinoKerkhof.dll
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\bin\Debug\netcoreapp3.1\MiniBioTinoKerkhof.pdb
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\obj\Debug\netcoreapp3.1\MiniBioTinoKerkhof.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\obj\Debug\netcoreapp3.1\MiniBioTinoKerkhof.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\obj\Debug\netcoreapp3.1\MiniBioTinoKerkhof.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\obj\Debug\netcoreapp3.1\MiniBioTinoKerkhof.AssemblyInfo.cs
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\obj\Debug\netcoreapp3.1\MiniBioTinoKerkhof.dll
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\obj\Debug\netcoreapp3.1\MiniBioTinoKerkhof.pdb
+C:\Users\endoo\Documents\Endoor 2020\Programmeren\VariablesAndDataTypes\MiniBio\MiniBioTinoKerkhof\MiniBioTinoKerkhof\obj\Debug\netcoreapp3.1\MiniBioTinoKerkhof.genruntimeconfig.cache
