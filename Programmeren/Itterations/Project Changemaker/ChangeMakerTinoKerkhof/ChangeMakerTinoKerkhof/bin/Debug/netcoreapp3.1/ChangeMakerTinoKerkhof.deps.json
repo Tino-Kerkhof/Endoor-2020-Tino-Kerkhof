@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ChangeMakerTinoKerkhof/1.0.0": {
+        "runtime": {
+          "ChangeMakerTinoKerkhof.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChangeMakerTinoKerkhof/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

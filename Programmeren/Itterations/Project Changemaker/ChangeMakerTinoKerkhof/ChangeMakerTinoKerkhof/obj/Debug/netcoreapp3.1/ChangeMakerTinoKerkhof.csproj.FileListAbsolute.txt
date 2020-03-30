@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\bin\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\bin\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\bin\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\bin\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\bin\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\bin\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\obj\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\obj\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\obj\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\obj\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\obj\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\obj\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Itterations\Project Changemaker\ChangeMakerTinoKerkhof\ChangeMakerTinoKerkhof\obj\Debug\netcoreapp3.1\ChangeMakerTinoKerkhof.genruntimeconfig.cache
