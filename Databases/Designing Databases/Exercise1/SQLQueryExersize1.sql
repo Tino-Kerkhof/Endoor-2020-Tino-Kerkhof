@@ -2,7 +2,7 @@
 USE DoctorWho
 CREATE TABLE tblProductionCompany(
 	ProductionCompanyId int IDENTITY(1,1) PRIMARY KEY,
-	ProductionCompanyName nvarchar(100),
+	ProductionCompanyName nvarchar(100) NOT NULL,
 	Abbriviation nvarchar(15)
 )
 go
