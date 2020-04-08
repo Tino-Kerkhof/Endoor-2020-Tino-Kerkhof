@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\bin\Debug\netcoreapp3.1\ProjectSunDay.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\bin\Debug\netcoreapp3.1\ProjectSunDay.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\bin\Debug\netcoreapp3.1\ProjectSunDay.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\bin\Debug\netcoreapp3.1\ProjectSunDay.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\bin\Debug\netcoreapp3.1\ProjectSunDay.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\bin\Debug\netcoreapp3.1\ProjectSunDay.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\obj\Debug\netcoreapp3.1\ProjectSunDay.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\obj\Debug\netcoreapp3.1\ProjectSunDay.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\obj\Debug\netcoreapp3.1\ProjectSunDay.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\obj\Debug\netcoreapp3.1\ProjectSunDay.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\obj\Debug\netcoreapp3.1\ProjectSunDay.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\obj\Debug\netcoreapp3.1\ProjectSunDay.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Logic\ProjectSunDay\ProjectSunDay\obj\Debug\netcoreapp3.1\ProjectSunDay.genruntimeconfig.cache
