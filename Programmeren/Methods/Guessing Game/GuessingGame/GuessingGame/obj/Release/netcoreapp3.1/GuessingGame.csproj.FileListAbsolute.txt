@@ -1,0 +1,12 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\bin\Release\netcoreapp3.1\GuessingGame.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\bin\Release\netcoreapp3.1\GuessingGame.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\bin\Release\netcoreapp3.1\GuessingGame.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\bin\Release\netcoreapp3.1\GuessingGame.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\bin\Release\netcoreapp3.1\GuessingGame.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\bin\Release\netcoreapp3.1\GuessingGame.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\obj\Release\netcoreapp3.1\GuessingGame.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\obj\Release\netcoreapp3.1\GuessingGame.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\obj\Release\netcoreapp3.1\GuessingGame.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\obj\Release\netcoreapp3.1\GuessingGame.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\obj\Release\netcoreapp3.1\GuessingGame.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Methods\Guessing Game\GuessingGame\GuessingGame\obj\Release\netcoreapp3.1\GuessingGame.genruntimeconfig.cache

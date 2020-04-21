@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Logic"
+    "\\Methods\\Guessing Game",
+    "\\Methods\\Guessing Game\\GuessingGame",
+    "\\Methods\\Guessing Game\\GuessingGame\\GuessingGame",
+    "\\Operations",
+    "\\Operations\\ProjectInputOutput",
+    "\\Operations\\ProjectInputOutput\\ProjectInputOutputTinoKerkhof",
+    "\\Operations\\ProjectInputOutput\\ProjectInputOutputTinoKerkhof\\ProjectInputOutputTinoKerkhof"
   ],
-  "SelectedNode": "\\Logic",
+  "SelectedNode": "\\Operations\\ProjectInputOutput\\ProjectInputOutputTinoKerkhof\\ProjectInputOutputTinoKerkhof\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Calculations",
+    "\\Criteria in Queries"
   ],
-  "SelectedNode": "\\Database Indexing",
+  "SelectedNode": "\\Calculations\\SQLQueryCalculations2.sql",
   "PreviewInSolutionExplorer": false
 }

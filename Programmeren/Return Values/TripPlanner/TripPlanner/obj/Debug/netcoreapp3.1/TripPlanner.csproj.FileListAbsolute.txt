@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\bin\Debug\netcoreapp3.1\TripPlanner.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\bin\Debug\netcoreapp3.1\TripPlanner.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\bin\Debug\netcoreapp3.1\TripPlanner.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\bin\Debug\netcoreapp3.1\TripPlanner.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\bin\Debug\netcoreapp3.1\TripPlanner.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\bin\Debug\netcoreapp3.1\TripPlanner.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\obj\Debug\netcoreapp3.1\TripPlanner.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\obj\Debug\netcoreapp3.1\TripPlanner.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\obj\Debug\netcoreapp3.1\TripPlanner.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\obj\Debug\netcoreapp3.1\TripPlanner.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\obj\Debug\netcoreapp3.1\TripPlanner.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\obj\Debug\netcoreapp3.1\TripPlanner.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Return Values\TripPlanner\TripPlanner\obj\Debug\netcoreapp3.1\TripPlanner.genruntimeconfig.cache
