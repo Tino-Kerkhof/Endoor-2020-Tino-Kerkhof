@@ -1,0 +1,13 @@
+<script type="text/javascript" src="main.js">
+  alert("Hello world!");
+</script>
+
+moet zijn:
+<script type="text/javascript" src="main.js"></script>
+
+of:
+<script type="text/javascript">
+  alert("Hello world!");
+</script>
+
+maar waarschijnlijk de eerste. ligt eraan of je Hello World! wilt weergeven of main.js wilt uitvoeren.

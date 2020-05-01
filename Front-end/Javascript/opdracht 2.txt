@@ -1,0 +1,4 @@
+Dit is wat het script laat zien:
+Hallo wereld!
+- Prima, dank u!
+Nou, tot ziens dan maar!
