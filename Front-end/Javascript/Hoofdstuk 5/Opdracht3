@@ -1,0 +1,9 @@
+function sum(a,b)
+{
+    a++; a--;
+    b++; b--;
+    var s = a+b;
+    return s;
+}
+
+alert(sum(prompt("Getal 1?",''), prompt("Getal 2?", '')));

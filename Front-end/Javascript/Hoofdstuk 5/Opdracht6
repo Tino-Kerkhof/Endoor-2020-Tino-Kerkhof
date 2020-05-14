@@ -1,0 +1,20 @@
+var a = 12;
+/* a = 12 */
+
+function f(a)
+{
+    var b = 16;
+    /* a, b = 16 */
+    return a+b;
+}
+
+function g(b)
+{
+    /* a = 12, b */
+    return a+b;
+}
+
+/* a = 12 */
+alert(g(f(10)));
+
+/* alert geeft 38 */

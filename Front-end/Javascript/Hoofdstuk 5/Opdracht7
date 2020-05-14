@@ -1,0 +1,9 @@
+x = 0;
+
+function klaag()
+{
+    document.write("Ik ben <b>" + ++x + "</b> keer aangeroepen!\n")
+}
+
+klaag(); klaag(); klaag(); klaag(); klaag(); 
+klaag(); klaag(); klaag(); klaag(); klaag(); 

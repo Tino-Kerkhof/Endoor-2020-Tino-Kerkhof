@@ -1,0 +1,4 @@
+var boekVerkocht = prompt("Hoeveel boeken heeft u verkocht?", '');
+var boekPrijs = prompt("Hoeveel kost een boek?", '');
+var boekKost = prompt("Hoeveel kost het om een boek in te kopen?", '');
+alert("U heeft " + boekVerkocht * (boekPrijs - boekKost) + " euro winst gemaakt op deze boeken.");

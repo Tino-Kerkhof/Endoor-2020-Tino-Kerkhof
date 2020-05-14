@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\bin\Debug\netcoreapp3.1\TicTacToeUserInput.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\bin\Debug\netcoreapp3.1\TicTacToeUserInput.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\bin\Debug\netcoreapp3.1\TicTacToeUserInput.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\bin\Debug\netcoreapp3.1\TicTacToeUserInput.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\bin\Debug\netcoreapp3.1\TicTacToeUserInput.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\bin\Debug\netcoreapp3.1\TicTacToeUserInput.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\obj\Debug\netcoreapp3.1\TicTacToeUserInput.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\obj\Debug\netcoreapp3.1\TicTacToeUserInput.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\obj\Debug\netcoreapp3.1\TicTacToeUserInput.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\obj\Debug\netcoreapp3.1\TicTacToeUserInput.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\obj\Debug\netcoreapp3.1\TicTacToeUserInput.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\obj\Debug\netcoreapp3.1\TicTacToeUserInput.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Mini Project\TicTacToe\TicTacToeUserInput\obj\Debug\netcoreapp3.1\TicTacToeUserInput.genruntimeconfig.cache

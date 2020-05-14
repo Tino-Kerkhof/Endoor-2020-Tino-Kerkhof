@@ -1,0 +1,2 @@
+var gezegde = 'Vaak wordt gezegd:\n"Je bent nooit te oud om te leren".\nDa\'s nou nog eens een wijze spreuk!';
+alert(gezegde);

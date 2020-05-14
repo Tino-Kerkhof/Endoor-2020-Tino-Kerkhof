@@ -1,0 +1,5 @@
+var jouwNaam = prompt("Wat is jouw naam?", '');
+var jouwLeeftijd = prompt("Wat is jouw leeftijd?", '');
+var mijnLeeftijd = 28;
+
+alert("Hoi " + jouwNaam + "\nIk ben " + (mijnLeeftijd - jouwLeeftijd) + " jaar ouder dan jij!")

@@ -1,0 +1,10 @@
+var a = 12;
+
+function f(b)
+{
+    return a + b
+}
+
+alert(f(a++))
+alert(f(a++))
+alert(f(9))

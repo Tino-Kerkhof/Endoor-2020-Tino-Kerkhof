@@ -1,0 +1,16 @@
+function product(a,b)
+{
+    var p = a*b;
+    return p;
+}
+
+function voerProductUit()
+{
+    var getal1 = prompt("Wat is het eerste getal van de vermenigvuldiging?", '');
+    var getal2 = prompt("Wat is het tweede getal van de vermenigvuldiging?", getal1);
+    alert("Het product van " + getal1 + " en " + getal2 + " is " + product(getal1, getal2));
+}
+
+voerProductUit();
+voerProductUit();
+voerProductUit();

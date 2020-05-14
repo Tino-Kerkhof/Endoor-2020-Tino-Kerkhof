@@ -1,0 +1,11 @@
+function kwadraat(x)
+{
+    return x*x;
+}
+
+function pythagoras(a,b)
+{
+    return Math.sqrt( kwadraat(a) + kwadraat(b) )
+}
+
+alert("Schuine zijde: " + pythagoras(prompt("Zijde 1?",''), prompt("Zijde 2?", '')));
