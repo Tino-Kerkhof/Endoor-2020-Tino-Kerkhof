@@ -1,0 +1,15 @@
+html, body{
+  margin: 0;
+  min-height: 100%;
+}
+
+iframe {
+  width: 80vw;
+  height: 80vh;
+  display: inline-block;
+}
+
+.videoDiv{
+  text-align: center;
+  align-items: center;
+}

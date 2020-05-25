@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\obj\Debug\netcoreapp3.1\SnailRace.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\obj\Debug\netcoreapp3.1\SnailRace.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\obj\Debug\netcoreapp3.1\SnailRace.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\obj\Debug\netcoreapp3.1\SnailRace.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\bin\Debug\netcoreapp3.1\SnailRace.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\bin\Debug\netcoreapp3.1\SnailRace.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\bin\Debug\netcoreapp3.1\SnailRace.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\bin\Debug\netcoreapp3.1\SnailRace.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\bin\Debug\netcoreapp3.1\SnailRace.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\bin\Debug\netcoreapp3.1\SnailRace.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\obj\Debug\netcoreapp3.1\SnailRace.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\obj\Debug\netcoreapp3.1\SnailRace.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\SnailRace\SnailRace\obj\Debug\netcoreapp3.1\SnailRace.genruntimeconfig.cache

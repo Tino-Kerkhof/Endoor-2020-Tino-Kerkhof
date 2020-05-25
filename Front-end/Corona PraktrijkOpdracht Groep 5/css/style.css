@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=blue-and-purple-cosmic-sky-956999.jpg&fm=jpg");
+  background-size: 100% auto;
+  background-repeat: repeat; 
+  font-family: 'Merriweather';
+  color: white;
+  position: relative;
+}
+
+nav {
+  background: rgba(13, 8, 102, 0.5);
+  height: 80px;
+  width: 100%;
+  font-family: 'Merriweather';
+}
+
+label.logo{
+  color: white;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-family: 'Smudger LET Plain:1.0';
+}
+
+.navList {
+  float: right;
+  margin: 0px 20px 0px 0px;
+}
+
+.navListItem {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.navA {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a.active,a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+
+@media (max-width: 952px) {
+  .label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .navA{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn{
+    display: block;
+  }
+  .navList{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .navListItem{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .navA{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}

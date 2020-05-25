@@ -1,0 +1,92 @@
+table {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+div ul li::before {
+  content: "\2056";
+  color: tomato;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+figure {
+  float: right;
+  width: 50%;
+  height: 50%;
+  margin-left: 50px;
+}
+
+.container {
+  padding: 0 3% 3% 3%;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.eu-land table tr td a {
+  text-decoration: underline;
+  color: rgba(255, 152, 0,1.7);
+}
+
+  .eu-land table tr td a:hover {
+      text-decoration: none;
+      background-color: transparent;
+      color: tomato;
+  }
+
+.title {
+  padding: 1% 0;
+}
+
+.sub-title {
+  padding: 1% 0 0 0;
+  color: tomato;
+}
+
+.i-img {
+  max-width: 95%;
+  border-radius: 8px;
+}
+
+.i-img-link {
+  color: white;
+}
+
+.info-source-header {
+  color: white;
+}
+
+.info-source-footer {
+  background-color: royalblue;
+  color: white;
+}
+
+.i-img-link:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: cornflowerblue;
+}
+
+.source:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: cornflowerblue;
+}
+
+@media(max-width: 500px) {
+  .container {
+      position: relative;
+      padding: 0 10% 3% 10%;
+  }
+}

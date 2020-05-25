@@ -1,0 +1,401 @@
+/* Dit programma speelt het spel Tic Tac Toe
+ * 
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Mini_Project
+{
+    class MiniProjectProgram
+    {
+        static void Main(string[] args)
+        {
+            // initializing variables:
+            bool playerTurn = true; // true = player 1, false = player 2
+            bool winFlag = false; // true when someone has won.
+            int turnNumber = 1; // this is the turn number
+            int[] boardPosition = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }; // 0 represents an empty spot, -1 player 1 and +1 player 2.
+            int userInput; //This can be 0 to 8 representing the place in the boardPosition array.
+
+            Console.WriteLine("Welcome to Tic Tac Toe!");
+            Console.SetWindowSize(120, 40);
+
+            // Print board:
+            PrintBoard();
+            DrawTicTacToe();
+
+            while (!winFlag && turnNumber <= 9)
+            {
+                // Ask input from user
+                userInput = AskUser(playerTurn, boardPosition);
+
+                // place an X or an O in the correct spot
+                PlaceXO(playerTurn, userInput);
+
+                // Play the game and check win
+                boardPosition = playMove(playerTurn, userInput, boardPosition);
+                winFlag = ThreeInARow(boardPosition);
+
+                // Change player turn if there is no win
+                if (!winFlag)
+                {
+                    playerTurn = ChangeTurn(playerTurn);
+                }
+
+                // go to next turn
+                turnNumber++;
+            }
+
+            // Give a congratulations to the winner or tell it's a draw
+            WinMessage(playerTurn, winFlag);
+            Console.ReadKey();
+
+        }
+
+        /* This method creates the Board using ConsoleWrite to draw 6 lines of white blocks.
+         * The Board has a size of 58x29 pixels. the lines have a width of 2 pixels and hight of 1 pixel so the 
+         * 9 black area's are 18x9.
+         * -Discription of how it works here-
+         */
+        private static void PrintBoard()
+        {
+            int posX = 5;
+            int posY = 5;
+            List<string> board = new List<string>();
+            board.Add("╔════════7════════╗ ╔════════8════════╗ ╔════════9════════╗");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("╚═════════════════╝ ╚═════════════════╝ ╚═════════════════╝");
+            board.Add("╔════════4════════╗ ╔════════5════════╗ ╔════════6════════╗");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("╚═════════════════╝ ╚═════════════════╝ ╚═════════════════╝");
+            board.Add("╔════════1════════╗ ╔════════2════════╗ ╔════════3════════╗");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("║                 ║ ║                 ║ ║                 ║");
+            board.Add("╚═════════════════╝ ╚═════════════════╝ ╚═════════════════╝");
+
+            for (int row = 0; row < board.Count; row++)
+            {
+                Console.SetCursorPosition(posX, row + posY);
+                Console.WriteLine(board[row]);
+            }
+        }
+
+        /* This method clears the input area and asks the user for input and returns an interger between 0 and 8.
+         * -Discription of how it works here-
+         */
+        private static int AskUser(bool playerTurn, int[] boardPosition)
+        {
+            int input;
+            int posX = 3;
+            int posY = 33;
+            Console.SetCursorPosition(posX, posY);
+            if (playerTurn) { Console.Write("Player 1, where do you want to place your X?"); }
+            else { Console.Write("Player 2, where do you want to place your O?"); }
+
+            Console.SetCursorPosition(posX, posY + 1);
+            Console.Write("Please give a number from 1-9 from the available spots. ");
+
+            bool validInput;
+            bool validMove = false;
+            do
+            {
+                do
+                {
+                    validInput = Int32.TryParse(Console.ReadLine(), out input);
+
+                    if (!validInput || input < 1 || input > 9)
+                    {
+                        Console.SetCursorPosition(posX, posY + 2);
+                        Console.Write("That is not a valid input. Please give a number from 1-9.".PadRight(80));
+                        Console.SetCursorPosition(posX + 56, posY + 1);
+                        Console.Write("".PadRight(20));
+                        Console.SetCursorPosition(posX + 56, posY + 1);
+                        validInput = false;
+                    }
+
+                } while (!validInput);
+
+                // make input count from 0 (as used by C#)
+                input--;
+                if ((boardPosition[input] == 1 && playerTurn) || (boardPosition[input] == -1 && !playerTurn))
+                {
+                    Console.SetCursorPosition(posX, posY + 2);
+                    Console.Write("That is not a valid move. You already played there.".PadRight(80));
+                    Console.SetCursorPosition(posX + 56, posY + 1);
+                    Console.Write("".PadRight(20));
+                    Console.SetCursorPosition(posX + 56, posY + 1);
+
+                }
+                else if ((boardPosition[input] == -1 && playerTurn) || (boardPosition[input] == 1 && !playerTurn))
+                {
+                    Console.SetCursorPosition(posX, posY + 2);
+                    Console.Write("That is not a valid move. Your opponent already played there.".PadRight(80));
+                    Console.SetCursorPosition(posX + 56, posY + 1);
+                    Console.Write("".PadRight(20));
+                    Console.SetCursorPosition(posX + 56, posY + 1);
+                }
+                else { validMove = true; }
+            } while (!validMove);
+
+            // cleanup
+            string cleanup = "".PadRight(80);
+            for (int i = 0; i <= 2; i++)
+            {
+                Console.SetCursorPosition(posX, posY + i);
+                Console.Write(cleanup);
+            }
+
+            return input;
+        }
+
+        /* This method defines the position of the X or O to be placed depending on the user input.
+         * -Discription of how it works here-
+         */
+        private static void PlaceXO(bool playerTurn, int userInput)
+        {
+            // define the starting position of your drawing depending on the Input
+            int posX;
+            int posY;
+
+            GetPosition(userInput, out posX, out posY);
+
+
+            if (playerTurn)
+            {
+                PlaceX(posX, posY);
+            }
+            else
+            {
+                PlaceO(posX, posY);
+            }
+        }
+
+        private static void GetPosition(int userInput, out int posX, out int posY)
+        {
+            posX = 0;
+            posY = 0;
+            switch (userInput)
+            {
+                case 0:
+                    posX = 5;
+                    posY = 23;
+                    break;
+                case 1:
+                    posX = 25;
+                    posY = 23;
+                    break;
+                case 2:
+                    posX = 45;
+                    posY = 23;
+                    break;
+                case 3:
+                    posX = 5;
+                    posY = 14;
+                    break;
+                case 4:
+                    posX = 25;
+                    posY = 14;
+                    break;
+                case 5:
+                    posX = 45;
+                    posY = 14;
+                    break;
+                case 6:
+                    posX = 5;
+                    posY = 5;                    
+                    break;
+                case 7:
+                    posX = 25;
+                    posY = 5;                    
+                    break;
+                case 8:
+                    posX = 45;
+                    posY = 5;                    
+                    break;
+            }
+        }
+
+        /* This method Places an X on the board at a defined position.
+         * The picture of the X is 14x7 pixels
+         * -Discription of how it works here-
+         */
+        private static void PlaceX(int posX, int posY)
+        {
+            List<string> x = new List<string>();
+
+            x.Add("╔═════════════════╗");
+            x.Add("║   █         █   ║");
+            x.Add("║    ██     ██    ║");
+            x.Add("║     ██   ██     ║");
+            x.Add("║       ███       ║");
+            x.Add("║     ██   ██     ║");
+            x.Add("║    ██     ██    ║");
+            x.Add("║   █         █   ║");
+            x.Add("╚═════════════════╝");
+
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            for (int row = 0; row < x.Count; row++)
+            {
+                Console.SetCursorPosition(posX, row + posY);
+                Console.WriteLine(x[row]);
+            }
+            Console.ResetColor();
+        }
+
+        /* This method Places an O on the board at a defined position.
+         * The picture of the O is 14x7 pixels
+         * -Discription of how it works here-
+         */
+        private static void PlaceO(int posX, int posY)
+        {
+            List<string> o = new List<string>();
+            o.Add("╔═════════════════╗");
+            o.Add("║      █████      ║");
+            o.Add("║    ██     ██    ║");
+            o.Add("║  ██         ██  ║");
+            o.Add("║  ██         ██  ║");
+            o.Add("║  ██         ██  ║");
+            o.Add("║    ██     ██    ║");
+            o.Add("║      █████      ║");
+            o.Add("╚═════════════════╝");
+
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            for (int row = 0; row < o.Count; row++)
+            {
+                Console.SetCursorPosition(posX, row + posY);
+                Console.WriteLine(o[row]);
+            }
+            Console.ResetColor();
+        }
+
+        private static void DrawTicTacToe()
+        {
+            int posX = 70;
+            int posY = 10;
+            List<string> ticTacToe = new List<string>();
+            ticTacToe.Add("   █         █             █             ");
+            ticTacToe.Add("  ██▌ ▀ ███ ██▌ ▄▄▄▄▄ ███ ██▌ ▄▄▄▄▄ ▄▄▄▄▄");
+            ticTacToe.Add("   █  ▐ █    █  ▄▄▄▄█ █    █  █   █ █   █");
+            ticTacToe.Add("   █  ▐ █    █  █   █ █    █  █   █ █▀▀▀▀");
+            ticTacToe.Add("   ██ ▐ ███  ██ █████ ███  ██ █████ █████");
+            ticTacToe.Add("                                         ");
+            ticTacToe.Add("                                         ");
+            ticTacToe.Add("██████    ██████    ██████");
+            ticTacToe.Add("██   ██  ██    ██  ██      ");
+            ticTacToe.Add("██████   ██    ██  ██      ");
+            ticTacToe.Add("██   ██  ██    ██  ██      ");
+            ticTacToe.Add("██   ██   ██████    ██████ ");
+            ticTacToe.Add("                           ");
+            ticTacToe.Add("                    Endoor 2020");
+            ticTacToe.Add(@"     ___                   ____      ██████");
+            ticTacToe.Add(@"    /     _ __  ___  _   _|  _ \     █     ");
+            ticTacToe.Add(@"   |  ___ ' __|/ _ \| | | | |_)/     ██████");
+            ticTacToe.Add(@"   | '_  | |  | (_) | |_| |___/           █");
+            ticTacToe.Add(@"    \___/|_|   \___/ \___/|_|        ██████");
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            for (int row = 0; row < ticTacToe.Count; row++)
+            {
+                Console.SetCursorPosition(posX, row + posY);
+                Console.WriteLine(ticTacToe[row]);
+            }
+            Console.ResetColor();
+        }
+
+        /* playMove method plaatst een -1 of een 1 in de array die het bord representeed aan de computer.
+         * een 1 als X aan de beurt is en een -1 als O aan de beurt is.
+         */
+        private static int[] playMove(bool playerTurn, int userInput, int[] boardPosition)
+        {
+            if (playerTurn)
+                boardPosition[userInput] = 1;
+            else
+                boardPosition[userInput] = -1;
+            return boardPosition;
+        }
+
+        /* ThreeInARow method kijkt of er drie op een rij is gemaakt door de rijen, kolommen en diagonalen bij elkaar op te tellen.
+         * Als er -3 of 3 uit komt, betekent dit dat drie dezelfde symbolen op een rij staan en er iemand gewonnen heeft.
+         */
+        private static bool ThreeInARow(int[] boardPosition)
+        {
+            for (int i = 0; i <= 2; i++)
+            {
+                if (//horizontal
+                    boardPosition[0 + (i * 3)] + boardPosition[1 + (i * 3)] + boardPosition[2 + (i * 3)] == -3 ||
+                    boardPosition[0 + (i * 3)] + boardPosition[1 + (i * 3)] + boardPosition[2 + (i * 3)] == 3 ||
+                    // vertical
+                    boardPosition[0 + i] + boardPosition[3 + i] + boardPosition[6 + i] == -3 ||
+                    boardPosition[0 + i] + boardPosition[3 + i] + boardPosition[6 + i] == 3)
+                {
+                    return true;
+                }
+            }
+            //diagonal
+            if (boardPosition[0] + boardPosition[4] + boardPosition[8] == -3 ||
+                boardPosition[0] + boardPosition[4] + boardPosition[8] == 3 ||
+                boardPosition[2] + boardPosition[4] + boardPosition[6] == -3 ||
+                boardPosition[2] + boardPosition[4] + boardPosition[6] == 3)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /* This method changes the turn from one player to the next
+         */
+        private static bool ChangeTurn(bool playerTurn)
+        {
+            if (playerTurn) { return false; }
+            else { return true; }
+        }
+
+        /* This Method gives a message to the winner or tells it's a draw.
+         * -Discription of how it works here-
+         */
+        private static void WinMessage(bool playerTurn, bool winFlag)
+        {
+            int posX = 3;
+            int posY = 33;
+            Console.SetCursorPosition(posX, posY);
+
+            if (!winFlag) 
+            {
+                Console.Write("It is a draw. We hope you had a fun game!");
+            }
+            else
+            {
+                if (playerTurn)
+                {
+                    Console.WriteLine("Player 1's Xs have won! Congratulations!");
+                }
+                else
+                {
+                    Console.WriteLine("Player 2's Os have won! Congratulations!");
+                }
+            }
+        }
+    }
+}
