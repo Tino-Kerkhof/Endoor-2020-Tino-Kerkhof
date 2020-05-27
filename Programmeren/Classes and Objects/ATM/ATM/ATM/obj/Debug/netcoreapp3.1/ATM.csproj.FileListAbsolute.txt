@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\bin\Debug\netcoreapp3.1\ATM.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\bin\Debug\netcoreapp3.1\ATM.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\bin\Debug\netcoreapp3.1\ATM.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\bin\Debug\netcoreapp3.1\ATM.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\bin\Debug\netcoreapp3.1\ATM.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\bin\Debug\netcoreapp3.1\ATM.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\obj\Debug\netcoreapp3.1\ATM.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\obj\Debug\netcoreapp3.1\ATM.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\obj\Debug\netcoreapp3.1\ATM.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\obj\Debug\netcoreapp3.1\ATM.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\obj\Debug\netcoreapp3.1\ATM.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\obj\Debug\netcoreapp3.1\ATM.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Classes and Objects\ATM\ATM\ATM\obj\Debug\netcoreapp3.1\ATM.genruntimeconfig.cache

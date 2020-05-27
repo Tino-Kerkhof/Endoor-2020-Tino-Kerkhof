@@ -1,0 +1,218 @@
+using System;
+using System.Numerics;
+using System.Threading;
+
+namespace ATM
+{
+    class ATMdriver
+    {
+        static void Main(string[] args)
+        {
+            bool validInput;
+            string userInput;
+            string userInputAmount;
+            decimal amount;
+            bool validWithdraw;
+            CheckingAccount myAccount = new CheckingAccount(100.0m);
+            SavingsAccount mySavings = new SavingsAccount();
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Greetings and how may I serve you?\n");
+                myAccount.CheckBallance();
+                mySavings.CheckBallance();
+                Console.Write("\nDo you want to (D)eposite, (W)ithdraw, (T)ransfer or (Q)uit? ");
+                userInput = Console.ReadLine();
+
+                // deposite
+                if (String.Equals(userInput.ToLower(), "d"))
+                {
+                    do
+                    {
+                        Console.Write("Deposite to: (C)hecking or (S)avings? or (E)xit? ");
+                        userInput = Console.ReadLine();
+                    } while (!String.Equals(userInput.ToLower(), "c") && !String.Equals(userInput.ToLower(), "s" ) &&
+                             !String.Equals(userInput.ToLower(), "e"));
+                    if (!String.Equals(userInput.ToLower(), "e"))
+                    {
+                        do
+                        {
+                            Console.Write("How many Credits do you want to deposite? or (E)xit? ");
+                            userInputAmount = Console.ReadLine();
+                            validInput = Decimal.TryParse(userInputAmount, out amount);
+                        } while (!validInput && !String.Equals(userInputAmount.ToLower(), "e"));
+
+                        if (!String.Equals(userInputAmount.ToLower(), "e"))
+                        {
+                            if (String.Equals(userInput.ToLower(), "c")) { myAccount.Deposite(amount); }
+                            else if (String.Equals(userInput.ToLower(), "s")) { mySavings.Deposite(amount); }
+                        }
+                    }
+                }
+
+                // withdraw
+                if (String.Equals(userInput.ToLower(), "w"))
+                {
+                    do
+                    {
+                        Console.Write("Withdraw from: (C)hecking or (S)avings? or (E)xit? ");
+                        userInput = Console.ReadLine();
+                    } while (!String.Equals(userInput.ToLower(), "c") && !String.Equals(userInput.ToLower(), "s") &&
+                             !String.Equals(userInput.ToLower(), "e"));
+                    if (!String.Equals(userInput.ToLower(), "e"))
+                        do
+                        {
+                            {
+                                do
+                                {
+                                    Console.Write("How many Credits do you want to withdraw? ");
+                                    userInputAmount = Console.ReadLine();
+                                    validInput = Decimal.TryParse(userInputAmount, out amount);
+                                } while (!validInput && !String.Equals(userInputAmount.ToLower(), "e"));
+
+                                validWithdraw = true;
+                                if (!String.Equals(userInputAmount.ToLower(), "e"))
+                                {
+                                    if (String.Equals(userInput.ToLower(), "c")) { validWithdraw = myAccount.Withdraw(amount); }
+                                    else if (String.Equals(userInput.ToLower(), "s")) { validWithdraw = mySavings.Withdraw(amount); }
+                                }
+                            }
+                        } while (!validWithdraw);
+                }
+
+                //transfer
+                if (String.Equals(userInput.ToLower(), "t"))
+                {
+                    do
+                    {
+                        Console.Write("Fransfer from: (C)hecking to Savings or (S)avings to Checkings? or (E)xit? ");
+                        userInput = Console.ReadLine();
+                    } while (!String.Equals(userInput.ToLower(), "c") && !String.Equals(userInput.ToLower(), "s") &&
+                             !String.Equals(userInput.ToLower(), "e"));
+
+                    if (!String.Equals(userInput.ToLower(), "e"))
+                    {
+                        do
+                        {
+                            do
+                            {
+                                Console.Write("How many Credits do you want to transfer? or (E)xit? ");
+                                userInputAmount = Console.ReadLine();
+                                validInput = Decimal.TryParse(userInputAmount, out amount);
+                            } while (!validInput && !String.Equals(userInputAmount.ToLower(), "e"));
+
+                            validWithdraw = true;
+                            if (!String.Equals(userInputAmount.ToLower(), "e"))
+                            {
+                                if (String.Equals(userInput.ToLower(), "c"))
+                                {
+                                    validWithdraw = myAccount.Withdraw(amount);
+                                    if (validWithdraw) { mySavings.Deposite(amount); }
+                                }
+                                else if (String.Equals(userInput.ToLower(), "s"))
+                                {
+                                    validWithdraw = mySavings.Withdraw(amount);
+                                    if (validWithdraw) { myAccount.Deposite(amount); }
+                                }
+                            }
+                        } while (!validWithdraw);
+                    }
+                }
+
+            } while (!String.Equals(userInput.ToLower(), "q"));
+        }
+
+        
+    }
+
+    class CheckingAccount
+    {
+        decimal balance;
+        public CheckingAccount(decimal ballance)
+        {
+            this.balance = ballance;
+        }
+        public CheckingAccount() : this(10.0m) { }
+
+        public decimal GetBallance()
+        {
+            return this.balance;
+        }
+        public void CheckBallance()
+        {
+            Console.WriteLine($"Your checking account has {this.balance:N2} credits.");
+        }
+        public void Deposite(decimal amount)
+        {
+            if (amount >= 0) { this.balance += amount; }
+            else { Console.WriteLine("You can't deposite negative credits"); }
+        }
+        public bool Withdraw(decimal amount)
+        {
+            if (amount >= 0)
+            {
+                if (this.balance >= amount) { this.balance -= amount; return true; }
+                else { Console.WriteLine($"You don't have enough funds to withdraw {amount:N2} credits."); return false; }
+            }
+            else { Console.WriteLine("You can't withdraw negative credits"); return false; }
+        }
+
+    }
+
+    class SavingsAccount
+    {
+        decimal balance;
+        decimal interestRate = 1.1m;
+        int interestCounter;
+
+        public SavingsAccount(decimal ballance)
+        {
+            this.balance = ballance;
+            this.interestCounter = 0;
+        }
+        public SavingsAccount() : this(10.0m) { }
+
+        public decimal GetBallance()
+        {
+            return this.balance;
+        }
+        public void CheckBallance()
+        {
+            Console.WriteLine($"Your checking account has {this.balance:N2} credits.");
+        }
+        public void Deposite(decimal amount)
+        {
+            if (amount >= 0) 
+            { 
+                this.balance += amount;
+                this.interestCounter++;
+                if (this.interestCounter >= 5) { Interest(); }
+            }
+            else { Console.WriteLine("You can't deposite negative credits"); }
+        }
+        public bool Withdraw(decimal amount)
+        {
+            if (amount >= 0)
+            {
+                if (this.balance >= amount) 
+                { 
+                    this.balance -= amount;
+                    this.interestCounter++;
+                    if (this.interestCounter >= 5) { Interest(); }
+                    return true;
+                }
+                else { Console.WriteLine($"You don't have enough funds to withdraw {amount:N2} credits."); return false; }
+            }
+            else { Console.WriteLine("You can't withdraw negative credits"); return false; }
+        }
+
+        private void Interest()
+        {
+            this.balance *= this.interestRate;
+            this.interestCounter = 0;
+            Console.WriteLine("Interest calculated.");
+            Thread.Sleep(2000);
+        }
+
+    }
+}
