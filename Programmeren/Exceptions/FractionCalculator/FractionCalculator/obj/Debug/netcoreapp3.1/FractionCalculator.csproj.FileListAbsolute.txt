@@ -1,0 +1,13 @@
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\bin\Debug\netcoreapp3.1\FractionCalculator.exe
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\bin\Debug\netcoreapp3.1\FractionCalculator.deps.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\bin\Debug\netcoreapp3.1\FractionCalculator.runtimeconfig.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\bin\Debug\netcoreapp3.1\FractionCalculator.runtimeconfig.dev.json
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\bin\Debug\netcoreapp3.1\FractionCalculator.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\bin\Debug\netcoreapp3.1\FractionCalculator.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\obj\Debug\netcoreapp3.1\FractionCalculator.csprojAssemblyReference.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\obj\Debug\netcoreapp3.1\FractionCalculator.csproj.CoreCompileInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\obj\Debug\netcoreapp3.1\FractionCalculator.AssemblyInfoInputs.cache
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\obj\Debug\netcoreapp3.1\FractionCalculator.AssemblyInfo.cs
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\obj\Debug\netcoreapp3.1\FractionCalculator.dll
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\obj\Debug\netcoreapp3.1\FractionCalculator.pdb
+C:\Users\endoo\Documents\GitHub\Endoor-2020-Tino-Kerkhof\Programmeren\Exceptions\FractionCalculator\FractionCalculator\obj\Debug\netcoreapp3.1\FractionCalculator.genruntimeconfig.cache
