@@ -1,0 +1,237 @@
+@import url(http://allfont.net/allfont.css?fonts=revue);
+ * {
+   background: black;
+ }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Revue', Arial ;
+}
+
+/*navbar*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px 0 20px;
+  background: #262626;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Revue', Arial;
+  text-transform: uppercase;
+}
+
+header .logo {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 32px;
+  float: left;
+  font-weight: bold;
+  background: #262626;
+  text-shadow: 3px 3px 5px #ff2800;
+}
+
+.dice-logo {
+  width: 70px;
+  background: #262626;
+}
+
+header nav {
+  float: right;
+  font-family: 'Revue', Arial;
+  font-size: 20px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none !important;
+  display: block;
+  background: #262626;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #fff;
+  background: #ff2800;
+}
+
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  background: #262626;
+}
+
+/*Yathzee title animation*/
+h1 {
+  margin: 70px 0 0 0 !important;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 7rem !important;
+  font-family: 'Revue', arial;
+  background: black;
+}
+
+h1 span {
+  margin: 0;
+  padding: 0;
+  animation: animate 3.5s linear infinite;
+}
+
+h1 span:nth-child(1) 
+{
+animation-delay: 0s;
+}
+
+h1 span:nth-child(2) 
+{
+animation-delay: 0.5s;
+}
+
+h1 span:nth-child(3) 
+{
+animation-delay: 1s;
+}
+
+h1 span:nth-child(4) 
+{
+animation-delay: 1.5s;
+}
+h1 span:nth-child(5) 
+{
+animation-delay: 2.0s;
+}
+
+h1 span:nth-child(6) 
+{
+animation-delay: 2.5s;
+}
+
+h1 span:nth-child(7) 
+{
+animation-delay: 3s;
+}
+
+@keyframes animate
+{
+  0%,100%
+  {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff,
+                0 0 200px #00b3ff,
+                0 0 300px #00b3ff,
+                0 0 400px #00b3ff;
+  }
+  5%,95%
+  {
+    color: #ff2800;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+/*video dices*/
+video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 991px) {
+  header 
+  {
+    padding: 0 20px;
+  }
+  .menu-toggle 
+  {
+    display: block;
+  }
+  header nav 
+  {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  header nav.active
+  {
+    left: 0;
+  }
+  header nav ul
+  {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a
+  {
+  border-bottom: 1px solid rgba( 0, 0, 0, .2);
+  }
+  h1 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header 
+  {
+    padding: 0 20px;
+  }
+  .menu-toggle 
+  {
+    display: block;
+  }
+  header nav 
+  {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  header nav.active
+  {
+    left: 0;
+  }
+  header nav ul
+  {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a
+  {
+  border-bottom: 1px solid rgba( 0, 0, 0, .2);
+  }
+  h1 {
+    display: none;
+  }
+}
+

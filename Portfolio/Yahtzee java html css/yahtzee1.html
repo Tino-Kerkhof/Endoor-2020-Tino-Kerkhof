@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee</title>
+    <link rel="stylesheet" type="text/css" href="css/yahtzee1.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a><img src="images/red_glassy_casino_dices_3d_png_image_23326.png" class="dice-logo">Yahtzee</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="yahtzee1.html" class="active">Yahtzee 1</a></li>
+          <li><a href="yahtzee2.html">Yahtzee 2</a></li>
+          <li><a href="yahtzee3.html">Yahtzee 3</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
+
+    <div id="container" class="page">
+
+      <div id="dice-images">
+          <img class="inline dice" src="dice/dice6.png" alt="6">
+          <img class="inline dice" src="dice/dice6.png" alt="6">
+          <img class="inline dice" src="dice/dice6.png" alt="6">
+          <img class="inline dice" src="dice/dice6.png" alt="6">
+          <img class="inline dice" src="dice/dice6.png" alt="6">
+      </div>
+
+      <div class="container">
+        <div id="roll">
+          <button class="roll-button btn hover1" type="button">Roll</button>
+        </div>
+      </div>
+      <br/>
+
+      <div id="result" class="page">
+
+        <h1 class="result">Result<br/><br/></h1>
+          <h3><span>🎲🎲🎲</span><br/></h3>
+
+        <button class="clear-button" type="button" onclick="window.location.href = window.location;">Clear</button>
+      </div>
+        <button type="button" class="btn btn-warning">
+        <a href="spelregels-yahtzee.pdf" target="_blank">Rules</a>
+        </button>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/yahtzee1.js"></script>
+
+  </body>
+</html>

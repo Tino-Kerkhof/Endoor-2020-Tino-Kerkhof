@@ -1,0 +1,351 @@
+@import url(http://allfont.net/allfont.css?fonts=revue);
+ * {
+   background: #333;
+ }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Revue', Arial;
+}
+
+/*navbar*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #262626;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Revue', Arial;
+  text-transform: uppercase;
+}
+
+header .logo {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 32px;
+  float: left;
+  font-weight: bold;
+  background: #262626;
+  text-shadow: 3px 3px 5px #ff2800;;
+}
+
+.dice-logo {
+  width: 70px;
+  background: #262626;
+}
+
+header nav {
+  float: right;
+  font-family: 'Revue', Arial;
+  font-size: 20px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none !important;
+  display: block;
+  background: #262626;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #fff;
+  background: #ff2800;
+}
+
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  background: #262626;
+}
+
+.container .btn {
+  height: 60px;
+  width: 150px;
+  outline: none;
+  border: none;
+  font-family: 'Revue' !important;
+  font-size: 30px;
+  font-weight: bold;
+  background: rgb(8, 189, 47);
+  color: #fff !important;
+  border-radius: 10px;
+  margin: 30px 20px 0 20px;
+}
+
+.container .hover1:hover {
+  background-image: url("https://media.giphy.com/media/8Z5KQIxj7W0t8zzYyR/giphy.gif");
+}
+
+.inline{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dice{
+  width: 100px !important;
+  height: 96px;
+  margin: 20px;
+  vertical-align: middle;
+  box-shadow: 10px 10px 10px #260000;
+}
+
+.lockedDice{
+  box-shadow: 10px 10px 10px #ff2800;
+  width: 110px !important;
+  height: 105px;
+  margin: 15px;
+}
+
+.btn-success {
+  color: #fff !important;
+  font-family: 'Montserrat','Revue', Arial !important;
+  font-weight: bold !important;
+}
+
+.clear-button {
+  background: #FF9800 !important;
+  color: #fff;
+  font-family: 'Montserrat','Revue', Arial !important;
+  font-weight: bold !important;
+}
+
+.clear-button:hover {
+  background: #ff2800 !important;
+  color: #fff;
+}
+
+#myBut {
+  background: #BF00FF;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+}
+
+#myBut:hover {
+  background: #530639;
+}
+
+
+.result{
+  border: none !important;
+  color: rgb(138, 138, 138);
+  text-shadow:0 0.4em 0.4em rgba(0,0,0,0.35);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.35);
+  font-family: 'Montserrat','Revue', Arial;
+  padding: 30px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.scoreTop{
+  position: relative;
+  top: -30px;
+  left: -15px;
+  width: 500px;
+  height: 50px;
+  font-family: 'Revue', Arial ;
+  
+}
+.score{
+  text-align: center;
+  background-color: rgb(31, 30, 30);
+  border-radius: 20px 20px 0 0;
+}
+
+.diceContainer{
+  width: 300px;
+}
+
+.bonusContainer{
+  width: 1110px;
+  margin-left: -16px;
+}
+
+.bonusContainerTop{
+  width: 1110px;
+}
+
+.lable{
+  text-align: right;
+}
+
+button.scoreBlokje {
+  border: none;
+  background: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
+  padding: 5px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+  transition: background .5s, color .2s;
+  line-height: 1.2rem;
+  vertical-align: middle;
+  letter-spacing: .1rem;
+  width: 90px;
+  height: 30px;
+}
+
+button.scoreBlokje:hover {
+  background: #d8e854;
+  color: #222;
+}
+
+button.scoreBlokje:focus {
+  outline: none;
+}
+
+button.scoreBlokje:disabled {
+  background: #909090;
+}
+
+.toggleScoreButton{
+  border: none;
+  background-color: #FFEB3B;
+  color: black;
+  padding: 5px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+  transition: background .5s, color .2s;
+  line-height: 1.2rem;
+  vertical-align: middle;
+  letter-spacing: .1rem;
+  width: 90px;
+  height: 30px;
+}
+
+button.yahtzeeBonus {
+  background: #BA5536; 
+}
+
+button.hasYahtzeeBonus {
+  background: #A43820;
+}
+
+button.hasUpperBonus {
+  background: #981CEB;
+}
+
+button.lockedScore{
+  background: #3185af;
+  color: #fff;
+}
+button.lockedScore:hover{
+  background: #3185af;;
+  color: #fff;
+}
+
+button.maybeScore {
+  background: rgb(8, 189, 47);
+}
+
+/********************************ID SELECTORS**************************/
+#container {
+  padding: 5%;
+}
+
+#dice-images {
+  text-align: center;
+}
+
+#grandTotal{
+  background-color: #FF9800;
+}
+
+/********************************Media**************************/
+@media (max-width: 991px) {
+  header
+  {
+    padding: 0 20px;
+  }
+  .menu-toggle
+  {
+    display: block;
+  }
+  header nav
+  {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  header nav.active
+  {
+    left: 0;
+  }
+  header nav ul
+  {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a
+  {
+  border-bottom: 1px solid rgba( 0, 0, 0, .2);
+  }
+  #container {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  header 
+  {
+    padding: 0 20px;
+  }
+  .menu-toggle 
+  {
+    display: block;
+  }
+  header nav 
+  {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  header nav.active
+  {
+    left: 0;
+  }
+  header nav ul
+  {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a
+  {
+  border-bottom: 1px solid rgba( 0, 0, 0, .2);
+  }
+  #container  {
+    margin-top: 20px;
+  }
+}

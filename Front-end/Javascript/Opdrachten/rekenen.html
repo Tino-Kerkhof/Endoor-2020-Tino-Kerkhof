@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <p>Terug naar <a href="index.html">overzicht</a>.</p>
+    <h2>Opdracht 6: Extern</h2>
+    <div id="uitleg">
+        <p>Voer een getal in op de 1e en 3e invoerlijn.</p>
+        <p>Op de tweede lijn voer je 'maal', 'delen door', 'plus' of 'min' in.</p>
+    </div>
+    
+
+    <form name="rekenmachine">
+        <input id="getal1" type="text" name="voer getal 1 in">
+        <input id="operation" type="text" name="voer operation in">
+        <input id="getal2" type="text" name="voer getal 2 in">
+        <br />
+        <button type="button" value="Submit" onclick="Rekenmachine()" id="btnRekenen">Submit</button>
+        <br />
+    </form>
+    <div id="uitvoerTekst"></div>
+</body>
+<script src="functies.js"></script>
+</html>

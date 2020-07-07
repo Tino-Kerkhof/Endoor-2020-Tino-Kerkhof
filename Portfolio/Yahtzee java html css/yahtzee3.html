@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yahtzee</title>
+  <link rel="stylesheet" type="text/css" href="css/yahtzee3.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a><img src="images/red_glassy_casino_dices_3d_png_image_23326.png" class="dice-logo">Yahtzee</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yahtzee1.html">Yahtzee 1</a></li>
+        <li><a href="yahtzee2.html">Yahtzee 2</a></li>
+        <li><a href="yahtzee3.html" class="active">Yahtzee 3</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </header>
+
+  <div id="container" class="page">
+
+    <div id="dice-images">
+      <img id="die0" class="inline dice" src="dice/dice6.png" alt="6">
+      <img id="die1" class="inline dice" src="dice/dice6.png" alt="6">
+      <img id="die2" class="inline dice" src="dice/dice6.png" alt="6">
+      <img id="die3" class="inline dice" src="dice/dice6.png" alt="6">
+      <img id="die4" class="inline dice" src="dice/dice6.png" alt="6">
+    </div>
+
+    <div class="container">
+      <div id="roll" class="text-center">
+        <button value="click to toggle fullscreen" onclick="toggleFullScreen()" id="myBut" class="btn fullScreen text-center">Fullscreen</button>
+        <button id="roll-btn" type="button" class="btn hover1 text-center">Roll</button>
+        <button class="btn clear-button" type="button" onclick="window.location.href = window.location;">New</button>
+      </div>
+
+      <br/>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="result diceContainer">
+            <div class="row scoreTop diceContainer">
+              <div class="col score">
+                <h2 class="score">Dice</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable"><img src="dice/dice1.png" width="30px"></h5>
+              </div>
+              <div class="col-6">
+                <button id="ones" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable"><img src="dice/dice2.png" width="30px"></h5>
+              </div>
+              <div class="col-6">
+                <button id="twos" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable"><img src="dice/dice3.png" width="30px"></h5>
+              </div>
+              <div class="col-6">
+                <button id="threes" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable"><img src="dice/dice4.png" width="30px"></h5>
+              </div>
+              <div class="col-6">
+                <button id="fours" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable"><img src="dice/dice5.png" width="30px"></h5>
+              </div>
+              <div class="col-6">
+                <button id="fives" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable"><img src="dice/dice6.png" width="30px"></h5>
+              </div>
+              <div class="col-6">
+                <button id="sixes" class="scoreBlokje"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="result">
+            <div class="row scoreTop">
+              <div class="col score">
+                <h2 class="score">Score</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable">3 of a kind</h5>
+              </div>
+              <div class="col-6">
+                <button id="threeOfAKind" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable">4 of a kind</h5>
+              </div>
+              <div class="col-6">
+                <button id="fourOfAKind" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable">Full House</h5>
+              </div>
+              <div class="col-6">
+                <button id="fullHouse" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable">Small Straight</h5>
+              </div>
+              <div class="col-6">
+                <button id="smallStraight" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable">Large Straight</h5>
+              </div>
+              <div class="col-6">
+                <button id="largeStraight" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable">Yahtzee</h5>
+              </div>
+              <div class="col-6">
+                <button id="yahtzee" class="scoreBlokje"></button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <h5 class="lable">Chance</h5>
+              </div>
+              <div class="col-6">
+                <button id="chance" class="scoreBlokje"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <div class="result bonusContainer">
+        <div class="row scoreTop bonusContainerTop">
+          <div class="col score">
+            <h2 class="score">BONUS</h2>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-2">
+            <h5 class="lable">Upper</h5>
+          </div>
+          <div class="col-2">
+            <button id="subtotalTop" class="scoreBlokje"></button>
+          </div>
+
+          <div class="col-2">
+            <h5 class="lable">Upper Bonus</h5>
+          </div>
+          <div class="col-2">
+            <button id="bonusTop" class="scoreBlokje"></button>
+          </div>
+
+          <div class="col-2">
+            <h5 class="lable">Upper Total</h5>
+          </div>
+          <div class="col-2">
+            <button id="totalTop" class="scoreBlokje"></button>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-2">
+            <h5 class="lable">Lower</h5>
+          </div>
+          <div class="col-2">
+            <button id="totalBottom" class="scoreBlokje"></button>
+          </div>
+
+          <div class="col-2">
+            <h5 class="lable">Yahtzee Bonus</h5>
+          </div>
+          <div class="col-2">
+            <button id="yahtzeeBonus" class="scoreBlokje"></button>
+          </div>
+
+          <div class="col-2">
+            <h5 class="lable">Grand Total</h5>
+          </div>
+          <div class="col-2">
+            <button id="grandTotal" class="scoreBlokje"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="js/yahtzee3.js"></script>
+
+</body>
+
+</html>

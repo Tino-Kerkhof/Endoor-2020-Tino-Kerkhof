@@ -20,27 +20,34 @@ namespace FractionCalculator
 
                 if (operation.Equals("+"))
                 {
-                    Console.WriteLine("{0} + {1} = {2}", fraction1.ShowFraction(), fraction2.ShowFraction(), 
-                        fraction1.Add(fraction2).ShowFraction());
+                    Console.WriteLine("{0} + {1} = {2}", fraction1.ToString(), fraction2.ToString(), 
+                        fraction1.Add(fraction2).ToString());
                 }
                 else if (operation.Equals("-"))
                 {
-                    Console.WriteLine("{0} - {1} = {2}", fraction1.ShowFraction(), fraction2.ShowFraction(), 
-                        fraction1.Subtract(fraction2).ShowFraction());
+                    Console.WriteLine("{0} - {1} = {2}", fraction1.ToString(), fraction2.ToString(), 
+                        fraction1.Subtract(fraction2).ToString());
                 }
                 else if (operation.Equals("*"))
                 {
-                    Console.WriteLine("{0} * {1} = {2}", fraction1.ShowFraction(), fraction2.ShowFraction(), 
-                        fraction1.Multiply(fraction2).ShowFraction());
+                    Console.WriteLine("{0} * {1} = {2}", fraction1.ToString(), fraction2.ToString(), 
+                        fraction1.Multiply(fraction2).ToString());
                 }
                 else if (operation.Equals("/"))
                 {
-                    Console.WriteLine("{0} / {1} = {2}", fraction1.ShowFraction(), fraction2.ShowFraction(), 
-                        fraction1.Devide(fraction2).ShowFraction());
+                    try
+                    {
+                        Console.WriteLine("{0} / {1} = {2}", fraction1.ToString(), fraction2.ToString(),
+                            fraction1.Devide(fraction2).ToString());
+                    }
+                    catch(ArgumentException e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
                 }
                 else if (operation.Equals("="))
                 {
-                    Console.WriteLine("{0} = {1} = {2}", fraction1.ShowFraction(), fraction2.ShowFraction(), 
+                    Console.WriteLine("{0} = {1} = {2}", fraction1.ToString(), fraction2.ToString(), 
                         fraction1.Equals(fraction2));
                 }
             }
@@ -134,11 +141,6 @@ namespace FractionCalculator
 
         public int GetNumerator() { return this.numerator; }
         public int GetDenominator() { return this.denominator; }
-        public string ShowFraction()
-        {
-            if (this.denominator == 1) { return (this.numerator).ToString(); }
-            return this.numerator + "/" + this.denominator;
-        }
 
 #pragma warning disable CS0114 // Member hides inherited member; missing override keyword
         public string ToString()
@@ -175,7 +177,7 @@ namespace FractionCalculator
         {
             if (other.numerator == 0)
             {
-                throw new ArgumentException(string.Format("You cannot devide by zero."), "other.nominator");
+                throw new ArgumentException(string.Format("You cannot devide by zero."), "numerator of input Fraction");
             }
             int numerator = this.numerator * other.denominator;
             int denominator = this.denominator * other.numerator;
